@@ -29,7 +29,7 @@ jobs:
       - name: Run a one-line script
         env:
           demo: Environment Variable Test
-          db_password: $ {{ secrets.DB_PASSWORD }}
+          db_password: ${{ secrets.DB_PASSWORD }}
         run: echo "Success!! $demo using actions secret $db_password"
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
